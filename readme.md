@@ -18,9 +18,17 @@ docker build -t hellodocker .
 ```
 **Create a container**
 ```
+docker run -it --name hellodocker -p 5000:5000 hellodocker
+```
+**Create a container and kill when exit**
+```
 docker run -it --name hellodocker --rm -p 5000:5000 hellodocker
 ```
-**Run images**
+**Run container**
 ```
 docker start hellodocker
+```
+**Kill container running**
+```
+docker kill hellodocker
 ```
